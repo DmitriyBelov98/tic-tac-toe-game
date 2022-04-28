@@ -37,7 +37,7 @@ function savePlayerConfig(event) {
   // } else {
   //   players[1].name = enteredPlayername;
   // }
-  // 
+  // положить в массив полученное введённое имя
   players[editedPlayer - 1].name = enteredPlayername;
   // принудительынй вызов функции закрытия
   closePlayerConfig();
