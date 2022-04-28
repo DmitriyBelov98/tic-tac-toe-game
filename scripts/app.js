@@ -1,3 +1,17 @@
+// переменная для id игрока
+let editedPlayer = 0;
+// массив для динамического отображения игрока
+const players = [
+    {
+        name: '',
+        symbol: 'X'
+    },
+    {
+        name: '',
+        symbol: 'O'
+    }
+];
+
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");
 const formElement = document.querySelector("form");
