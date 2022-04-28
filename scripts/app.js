@@ -1,14 +1,18 @@
+// массив для отслеживания игровых полей
 const gameData = [
     [0, 0, 0],
     [0, 0, 0],
     [0, 0, 0]
 ];
-
+// переменная для текущего раунда
+let currentRound = 1;
 // переменная для id игрока
 let editedPlayer = 0;
 // переменная для текущего игрока
 let activePlayer = 0;
+let gameIsOver = false;
 // массив для динамического отображения игрока
+
 const players = [
     {
         name: '',
@@ -26,6 +30,7 @@ const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById('config-errors');
 const gameAreaElement = document.getElementById('active-game');
 const activePlayerNameElement = document.getElementById('active-player-name');
+const gameOverElement = document.getElementById('game-over');
 
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
